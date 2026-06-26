@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0b1220;
+    color:white;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:40px;
+    font-weight:bold;
+    color:#00e5ff;
+}
+
+.status{
+    color:#00ff88;
+    font-weight:bold;
+}
+
+.clock{
+    font-size:50px;
+    text-align:center;
+    margin:30px 0;
+    color:#00e5ff;
+}
+
+.chat-box{
+    background:#111827;
+    border-radius:15px;
+    padding:20px;
+    margin:20px 0;
+}
+
+input{
+    width:80%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    background:#00e5ff;
+    color:black;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.card{
+    background:#111827;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    background:#00e5ff;
+    color:black;
+    transform:scale(1.05);
+}
