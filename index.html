@@ -1,159 +1,528 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA AI</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
-<title>JARVIS AI Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<div class="background"></div>
+<div class="container">
 
-<header>
+    <!-- Sidebar -->
+    <aside class="sidebar">
 
-<div class="logo">
+        <div class="logo">
 
-<h1>JARVIS</h1>
+            <div class="logo-circle">
+                N
+            </div>
 
-<p>Artificial Intelligence Assistant</p>
+            <h2>NOVA AI</h2>
+
+        </div>
+
+        <ul class="menu">
+
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-comments"></i>
+                <span>AI Chat</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-microphone"></i>
+                <span>Voice</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>Calls</span>
+            </li>
+
+            <li>
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </li>
+
+            <li>
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-music"></i>
+                <span>Music</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-globe"></i>
+                <span>Search</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Area -->
+    <main class="main-content">
+
+        <header class="top-bar">
+
+            <div class="welcome">
+
+                <h1>Hello Ankush 👋</h1>
+
+                <p>Welcome back to NOVA AI</p>
+
+            </div>
+
+            <div class="status">
+
+                <div class="online-dot"></div>
+
+                <span>ONLINE</span>
+
+            </div>
+
+        </header>
+
+        <!-- बाकी UI अगले Part में आएगा -->
+
+    </main>
 
 </div>
 
-<div class="status">
+<script src="script.js"></script>
 
-<span id="statusText">
-🟢 ONLINE
-</span>
+</body>
+</html>
+<!-- ===========================
+     NOVA AI CENTER PANEL
+=========================== -->
 
-</div>
+<section class="nova-panel">
 
-</header>
+    <div class="mode-card">
 
-<main>
+        <div class="mode-left">
 
-<section class="left-panel">
+            <h2>NOVA AI</h2>
 
-<div class="ai-circle">
+            <p id="modeText">
+                Friendly Mode Active 😊
+            </p>
 
-<div class="circle1"></div>
+        </div>
 
-<div class="circle2"></div>
+        <div class="mode-right">
 
-<div class="circle3"></div>
+            <button id="novaBtn" class="active-mode">
+                NOVA
+            </button>
 
-<div class="core">
+            <button id="jarvisBtn">
+                COMMAND
+            </button>
 
-<h2>AI</h2>
+        </div>
 
-</div>
+    </div>
 
-</div>
+    <!-- AI Orb -->
 
-<div class="clock">
+    <div class="orb-section">
 
-<h1 id="time">
-00:00:00
-</h1>
+        <div class="ai-orb">
 
-<p id="date">
-Loading...
-</p>
+            <div class="ring ring1"></div>
+            <div class="ring ring2"></div>
+            <div class="ring ring3"></div>
 
-</div>
+            <div class="core">
+                N
+            </div>
 
-</section>
-<section class="right-panel">
+        </div>
+
+        <h2 class="orb-title">
+            NOVA Listening...
+        </h2>
+
+        <p class="orb-subtitle">
+            Tap the microphone or   
+            <!-- ===========================
+     CHAT PANEL
+=========================== -->
+
+<section class="chat-panel">
+
+    <div class="chat-header">
+
+        <h2>
+            AI Conversation
+        </h2>
+
+        <span class="chat-status">
+            ● Online
+        </span>
+
+    </div>
 
     <div class="chat-box" id="chatBox">
 
-        <div class="message bot">
+        <div class="message nova">
 
             <div class="avatar">
-                🤖
+                N
             </div>
 
             <div class="text">
-                <h3>Hello Ankush!</h3>
-                <p>I am JARVIS.</p>
-                <p>How can I help you today?</p>
+
+                <h4>NOVA</h4>
+
+                <p>
+                    Hello Ankush 😊
+                    I am ready to help you.
+                    Ask me anything.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="message user">
+
+            <div class="text">
+
+                <h4>You</h4>
+
+                <p>
+                    Hi NOVA!
+                </p>
+
             </div>
 
         </div>
 
     </div>
 
-    <div class="input-area">
+    <!-- Input -->
+
+    <div class="chat-input">
 
         <input
             type="text"
             id="userInput"
-            placeholder="Type your command...">
+            placeholder="Type your message...">
 
-        <button id="sendBtn" title="Send">
-            <i class="fas fa-paper-plane"></i>
-        </button>
+        <button id="sendBtn">
 
-        <button id="micBtn" title="Voice">
-            <i class="fas fa-microphone"></i>
+            <i class="fa-solid fa-paper-plane"></i>
+
         </button>
 
     </div>
 
 </section>
 
-</main>
+<!-- ===========================
+     QUICK ACTIONS
+=========================== -->
 
-<footer>
+<section class="quick-actions">
 
-    <div class="cards">
+    <div class="action-card">
 
-        <div class="card">
-            <i class="fas fa-globe"></i>
-            <p>Google Search</p>
-        </div>
+        <i class="fa-solid fa-phone"></i>
 
-        <div class="card">
-            <i class="fab fa-youtube"></i>
-            <p>YouTube</p>
-        </div>
+        <h3>Call</h3>
 
-        <div class="card">
-            <i class="fas fa-cloud-sun"></i>
-            <p>Weather</p>
-        </div>
+        <p>Call any contact</p>
 
-        <div class="card">
-            <i class="fas fa-folder-open"></i>
-            <p>Files</p>
-        </div>
+    </div>
 
-        <div class="card">
-            <i class="fas fa-cog"></i>
-            <p>Settings</p>
-        </div>
+    <div class="action-card">
 
-        <div class="card">
-            <i class="fas fa-brain"></i>
-            <p>AI Memory</p>
+        <i class="fa-solid fa-music"></i>
+
+        <h3>Music</h3>
+
+        <p>Play your songs</p>
+
+    </div>
+
+    <div class="action-card">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+        <h3>WhatsApp</h3>
+
+        <p>Notifications</p>
+
+    </div>
+
+    <div class="action-card">
+
+        <i class="fa-solid fa-globe"></i>
+
+        <h3>Search</h3>
+
+        <p>Search the web</p>
+
+    </div>
+
+</section>
+<!-- ===========================
+     SYSTEM DASHBOARD
+=========================== -->
+
+<section class="system-dashboard">
+
+    <div class="dashboard-card">
+
+        <i class="fa-solid fa-battery-full"></i>
+
+        <h3>Battery</h3>
+
+        <h2 id="batteryLevel">100%</h2>
+
+        <p>Power Status</p>
+
+    </div>
+
+    <div class="dashboard-card">
+
+        <i class="fa-solid fa-wifi"></i>
+
+        <h3>Internet</h3>
+
+        <h2>Connected</h2>
+
+        <p>Wi-Fi Active</p>
+
+    </div>
+
+    <div class="dashboard-card">
+
+        <i class="fa-solid fa-memory"></i>
+
+        <h3>Memory</h3>
+
+        <h2>8 GB</h2>
+
+        <p>Available RAM</p>
+
+    </div>
+
+    <div class="dashboard-card">
+
+        <i class="fa-solid fa-microchip"></i>
+
+        <h3>CPU</h3>
+
+        <h2>Normal</h2>
+
+        <p>Performance</p>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     INFO CARDS
+=========================== -->
+
+<section class="info-grid">
+
+    <div class="info-card">
+
+        <i class="fa-solid fa-cloud-sun"></i>
+
+        <h3>Weather</h3>
+
+        <p id="weatherText">
+            Loading weather...
+        </p>
+
+    </div>
+
+    <div class="info-card">
+
+        <i class="fa-solid fa-calendar-days"></i>
+
+        <h3>Date & Time</h3>
+
+        <p id="dateTime">
+            -- / -- / ----
+        </p>
+
+    </div>
+
+    <div class="info-card">
+
+        <i class="fa-solid fa-music"></i>
+
+        <h3>Now Playing</h3>
+
+        <p id="musicStatus">
+            No music playing
+        </p>
+
+    </div>
+
+    <div class="info-card">
+
+        <i class="fa-solid fa-brain"></i>
+
+        <h3>AI Memory</h3>
+
+        <p>
+            Hello Ankush 👋
+            I remember your preferences.
+        </p>
+
+    </div>
+
+</section>
+<!-- ===========================
+     SETTINGS PANEL
+=========================== -->
+
+<section class="settings-panel">
+
+    <h2>Settings</h2>
+
+    <div class="setting-item">
+
+        <span>AI Mode</span>
+
+        <select id="aiMode">
+
+            <option>NOVA Mode</option>
+
+            <option>Command Mode</option>
+
+        </select>
+
+    </div>
+
+    <div class="setting-item">
+
+        <span>Voice</span>
+
+        <select id="voiceType">
+
+            <option>Female</option>
+
+            <option>Deep</option>
+
+        </select>
+
+    </div>
+
+    <div class="setting-item">
+
+        <span>Theme</span>
+
+        <select id="theme">
+
+            <option>Dark</option>
+
+            <option>Light</option>
+
+        </select>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     NOTIFICATIONS
+=========================== -->
+
+<section class="notification-panel">
+
+    <h2>Recent Notifications</h2>
+
+    <div class="notification">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+        <div>
+
+            <h4>WhatsApp</h4>
+
+            <p>No new messages</p>
+
         </div>
 
     </div>
 
+    <div class="notification">
+
+        <i class="fa-brands fa-instagram"></i>
+
+        <div>
+
+            <h4>Instagram</h4>
+
+            <p>No new notifications</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     PROFILE
+=========================== -->
+
+<section class="profile-card">
+
+    <div class="profile-avatar">
+        A
+    </div>
+
+    <h2>Ankush</h2>
+
+    <p>Owner of NOVA AI</p>
+
+</section>
+
+<!-- ===========================
+     FOOTER
+=========================== -->
+
+<footer class="footer">
+
+    <p>
+        NOVA AI v1.0 © 2026
+    </p>
+
 </footer>
-<div id="notification">
-    ✅ JARVIS Ready...
+
+<!-- Closing Tags -->
+</main>
 </div>
 
 <script src="script.js"></script>
